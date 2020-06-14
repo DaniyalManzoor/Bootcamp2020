@@ -24,10 +24,10 @@ jobs:
     - name: Instal NodejS
     - uses: actions/setup-node@v2-beta
       with:
-        node-version: '12'
+        node-version: 12
         
     - name: Install Surge
-      run: npm i -g surge
+      run: npm install -g surge
     - name: Run Surge
-      run: surge ./ bootcompclass1new.surge.sh --token ${{secrets.Surge_Token}}
+      run: surge ./bootcompclass1new.surge.sh --token ${{secrets.Surge_Token}}
       
